@@ -1,0 +1,3 @@
+
+window.SF_CONFIG={supportEmail:"support@findscholarshipsnow.com",appStoreUrl:"#",siteUrl:"https://findscholarshipsnow.com"};
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-support-email]').forEach(el=>{el.textContent=SF_CONFIG.supportEmail;if(el.tagName==='A')el.href='mailto:'+SF_CONFIG.supportEmail});document.querySelectorAll('[data-app-store]').forEach(el=>el.href=SF_CONFIG.appStoreUrl);const b=document.querySelector('.mobile-toggle'),m=document.querySelector('.links');if(b&&m)b.addEventListener('click',()=>m.classList.toggle('open'));document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear())});
